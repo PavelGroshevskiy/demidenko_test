@@ -1,0 +1,2 @@
+export const ALPHA_BET_SIMBOLS =
+	"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";

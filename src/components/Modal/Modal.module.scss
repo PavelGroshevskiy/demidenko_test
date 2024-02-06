@@ -1,0 +1,47 @@
+.Modal {
+	display: none;
+	width: 100%;
+	border: 3px solid rgb(127, 115, 104);
+	height: 100px;
+	border-radius: 10px;
+	margin-top: 30px;
+	background-color: var(--white);
+	// transform: scale(1);
+	// animation: unfoldOut 1s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+.modalOpen {
+	display: block;
+	width: 100%;
+	border: 3px solid rgb(127, 115, 104);
+	height: 100px;
+	border-radius: 10px;
+	margin-top: 30px;
+
+	transform: scaleY(0.01) scaleX(0);
+	animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+@keyframes unfoldIn {
+	0% {
+		transform: scaleY(0.005) scaleX(0);
+	}
+	50% {
+		transform: scaleY(0.005) scaleX(1);
+	}
+	100% {
+		transform: scaleY(1) scaleX(1);
+	}
+}
+
+// @keyframes unfoldOut {
+// 	0% {
+// 		transform: scaleY(1) scaleX(1);
+// 	}
+// 	50% {
+// 		transform: scaleY(0.005) scaleX(1);
+// 	}
+// 	100% {
+// 		transform: scaleY(0.005) scaleX(0);
+// 	}
+// }
